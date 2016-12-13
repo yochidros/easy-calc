@@ -109,7 +109,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func returnButton(_ sender: Any) {
-        var N:Int = Int(textField.text!)!/10
+        let N:Int = Int(textField.text!)!/10
         if( N == 0){
             textField.text! = ""
         }
