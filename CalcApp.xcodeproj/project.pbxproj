@@ -14,6 +14,8 @@
 		CEF1CB361DFFCB860090780C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF1CB341DFFCB860090780C /* LaunchScreen.storyboard */; };
 		CEF1CB411DFFCB860090780C /* CalcAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1CB401DFFCB860090780C /* CalcAppTests.swift */; };
 		CEF1CB4C1DFFCB860090780C /* CalcAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1CB4B1DFFCB860090780C /* CalcAppUITests.swift */; };
+		CEF1CB5A1DFFD3F30090780C /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1CB591DFFD3F30090780C /* customButton.swift */; };
+		CEF1CB5C1DFFD5300090780C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1CB5B1DFFD5300090780C /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CEF1CB471DFFCB860090780C /* CalcAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF1CB4B1DFFCB860090780C /* CalcAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcAppUITests.swift; sourceTree = "<group>"; };
 		CEF1CB4D1DFFCB860090780C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF1CB591DFFD3F30090780C /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		CEF1CB5B1DFFD5300090780C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				CEF1CB321DFFCB860090780C /* Assets.xcassets */,
 				CEF1CB341DFFCB860090780C /* LaunchScreen.storyboard */,
 				CEF1CB371DFFCB860090780C /* Info.plist */,
+				CEF1CB591DFFD3F30090780C /* customButton.swift */,
+				CEF1CB5B1DFFD5300090780C /* ViewController2.swift */,
 			);
 			path = CalcApp;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF1CB2E1DFFCB860090780C /* ViewController.swift in Sources */,
+				CEF1CB5C1DFFD5300090780C /* ViewController2.swift in Sources */,
 				CEF1CB2C1DFFCB860090780C /* AppDelegate.swift in Sources */,
+				CEF1CB5A1DFFD3F30090780C /* customButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CalcApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yochio.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CalcApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yochio.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
