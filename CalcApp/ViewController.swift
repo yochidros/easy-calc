@@ -26,6 +26,10 @@ enum Function{
     }
 }
 
+class NumberButton : UIButton{
+    @IBInspectable var numberString : String = ""
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
@@ -42,41 +46,10 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func zeroButton(_ sender: Any) {
-        addText("0")
+    @IBAction func numberButton(_ sender:NumberButton){
+        addText(sender.numberString)
     }
-    @IBAction func doubleZeroButton(_ sender: Any) {
-        addText("0")
-        addText("0")
-    }
-    @IBAction func oneButton(_ sender: Any) {
-        addText("1")
-    }
-    @IBAction func twoButton(_ sender: Any) {
-        addText("2")
-    }
-    @IBAction func threeButton(_ sender: Any) {
-        addText("3")
-    }
-    @IBAction func fourButton(_ sender: Any) {
-        addText("4")
-    }
-    @IBAction func fiveButton(_ sender: Any) {
-        addText("5")
-    }
-    @IBAction func sixButton(_ sender: Any) {
-        addText("6")
-    }
-    @IBAction func sevenButton(_ sender: Any) {
-        addText("7")
-    }
-    @IBAction func eightButton(_ sender: Any) {
-        addText("8")
-    }
-    @IBAction func nineButton(_ sender: Any) {
-        addText("9")
-    }
-   
+    
     @IBAction func plusButton(_ sender: Any) {
         funcButton(tx: textField.text, f:Function.Plus)}
     @IBAction func minusButton(_ sender: Any) {
