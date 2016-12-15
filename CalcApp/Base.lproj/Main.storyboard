@@ -184,44 +184,56 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="0.64084507042253525" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfh-RL-IdQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfh-RL-IdQ" customClass="FunctionButton" customModule="CalcApp" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.38531890511512756" green="0.38538855314254761" blue="0.38530975580215454" alpha="0.5252530809859155" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="functionString" value="+"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZG3-Rj-qt4"/>
+                                    <action selector="functionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ph-ht-xmY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-VG-lgd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-VG-lgd" customClass="FunctionButton" customModule="CalcApp" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.38531890511512756" green="0.38538855314254761" blue="0.38530975580215454" alpha="0.5252530809859155" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="×">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="functionString" value="*"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="multiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4TY-ZW-nGT"/>
+                                    <action selector="functionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDL-oX-gpz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH1-DB-tkG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH1-DB-tkG" customClass="FunctionButton" customModule="CalcApp" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.38531890511512756" green="0.38538855314254761" blue="0.38530975580215454" alpha="0.5252530809859155" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="÷">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="functionString" value="/"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="divisionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4m-SS-QSH"/>
+                                    <action selector="functionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAI-bd-rNq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GV-gM-gPO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GV-gM-gPO" customClass="FunctionButton" customModule="CalcApp" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.38531890511512756" green="0.38538855314254761" blue="0.38530975580215454" alpha="0.5252530809859155" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="ー">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="functionString" value="-"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="minusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4E-Hr-Plf"/>
+                                    <action selector="functionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YyV-4q-kUm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rHl-xG-JQR">

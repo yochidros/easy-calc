@@ -9,11 +9,11 @@
 import UIKit
 
 
-enum Function{
-    case Plus
-    case Minus
-    case Mul
-    case Div
+enum Function : String{
+    case Plus   = "+"
+    case Minus  = "-"
+    case Mul    = "*"
+    case Div    = "/"
     
     func getResult(first:Int , second:Int) -> Int{
         switch self{
@@ -28,6 +28,10 @@ enum Function{
 
 class NumberButton : UIButton{
     @IBInspectable var numberString : String = ""
+}
+
+class FunctionButton : UIButton{
+    @IBInspectable var functionString : String = ""
 }
 
 class ViewController: UIViewController {
@@ -46,14 +50,15 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func plusButton(_ sender: Any) {
-        funcButton(tx: textField.text, f:Function.Plus)}
-    @IBAction func minusButton(_ sender: Any) {
-        funcButton(tx: textField.text, f:Function.Minus)}
-    @IBAction func divisionButton(_ sender: Any) {
-        funcButton(tx: textField.text, f:Function.Div)}
-    @IBAction func multiButton(_ sender: Any) {
-        funcButton(tx: textField.text, f:Function.Mul)}
+    @IBAction func functionButton(_ sender:FunctionButton){
+        if let text = textField.text, let number = Int(text), let function = Function(rawValue:sender.functionString){
+            firstval = number
+            function_cal = function
+        }else{
+            alertFunction()
+        }
+        textField.text = ""
+    }
     
     //一文字消去
     @IBAction func returnButton(_ sender: Any) {
