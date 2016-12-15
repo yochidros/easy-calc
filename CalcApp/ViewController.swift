@@ -88,16 +88,10 @@ class ViewController: UIViewController {
     
     //一文字消去
     @IBAction func returnButton(_ sender: Any) {
-        var _N:Int = 0
-        if let text = textField.text, let n = Int(text){
-                _N = n/10
-                textField.text = String("\(_N)")
-            if _N == 0{
-                textField.text = ""
-            }
-        }
-        else{
-            textField.text = String("\(_N)")
+        if let text = textField.text, text.characters.count > 0{
+            textField.text = text.substring(to: text.index(text.startIndex, offsetBy: text.characters.count - 1))
+        }else{
+            textField.text = ""
         }
     }
     //ファンクションボタンを押した時の処理
