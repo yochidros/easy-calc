@@ -39,15 +39,11 @@ class ViewController: UIViewController {
     var result_cal:Int = 0
     var function_cal:Function = Function.Plus
     
-    func addText(_ numberString:String){
-        let oldValue = (textField.text ?? "")
-        if oldValue.characters.count > 0 || numberString != "0"{
-            textField.text =  oldValue + String(numberString)
-        }
-    }
-    
     @IBAction func numberButton(_ sender:NumberButton){
-        addText(sender.numberString)
+        let oldValue = (textField.text ?? "")
+        if oldValue.characters.count > 0 || sender.numberString != "0"{
+            textField.text =  oldValue + String(sender.numberString)
+        }
     }
     
     @IBAction func plusButton(_ sender: Any) {
