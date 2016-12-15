@@ -35,38 +35,47 @@ class ViewController: UIViewController {
     var result_cal:Int = 0
     var function_cal:Function = Function.Plus
     
-    func addText(text: String?,num:String){
-        var rawText: String
-        if let tx = text{
-            rawText = tx
-            rawText += num
-            textField.text = rawText
+    func addText(_ numberString:String){
+        let oldValue = (textField.text ?? "")
+        if oldValue.characters.count > 0 || numberString != "0"{
+            textField.text =  oldValue + String(numberString)
         }
-        else{
-            alertFunction()
-        }
-        
     }
     
     @IBAction func zeroButton(_ sender: Any) {
-        if ((textField.text != nil) && !(textField.text == "")){
-            addText(text: textField.text, num: "0")
-        }
+        addText("0")
     }
     @IBAction func doubleZeroButton(_ sender: Any) {
-        if ((textField.text != nil) && !(textField.text == "")){
-                addText(text: textField.text, num: "0")
-        }
+        addText("0")
+        addText("0")
     }
-    @IBAction func oneButton(_ sender: Any) {addText(text: textField.text, num: "1")}
-    @IBAction func twoButton(_ sender: Any) {addText(text: textField.text, num: "2")}
-    @IBAction func threeButton(_ sender: Any) {addText(text: textField.text, num: "3")}
-    @IBAction func fourButton(_ sender: Any) {addText(text: textField.text, num: "4")}
-    @IBAction func fiveButton(_ sender: Any) {addText(text: textField.text, num: "5")}
-    @IBAction func sixButton(_ sender: Any) {addText(text: textField.text, num: "6")}
-    @IBAction func sevenButton(_ sender: Any) {addText(text: textField.text, num: "7")}
-    @IBAction func eightButton(_ sender: Any) {addText(text: textField.text, num: "8")}
-    @IBAction func nineButton(_ sender: Any) {addText(text: textField.text, num: "9")}
+    @IBAction func oneButton(_ sender: Any) {
+        addText("1")
+    }
+    @IBAction func twoButton(_ sender: Any) {
+        addText("2")
+    }
+    @IBAction func threeButton(_ sender: Any) {
+        addText("3")
+    }
+    @IBAction func fourButton(_ sender: Any) {
+        addText("4")
+    }
+    @IBAction func fiveButton(_ sender: Any) {
+        addText("5")
+    }
+    @IBAction func sixButton(_ sender: Any) {
+        addText("6")
+    }
+    @IBAction func sevenButton(_ sender: Any) {
+        addText("7")
+    }
+    @IBAction func eightButton(_ sender: Any) {
+        addText("8")
+    }
+    @IBAction func nineButton(_ sender: Any) {
+        addText("9")
+    }
    
     @IBAction func plusButton(_ sender: Any) {
         funcButton(tx: textField.text, f:Function.Plus)}
