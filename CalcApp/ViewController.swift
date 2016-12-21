@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     var function_cal:Function = Function.Plus
     
     @IBAction func numberButton(_ sender:NumberButton){
-        let oldValue = (textField.text ?? "")
+        let oldValue = (textField.text ?? "")//textがnilでなければtext,nilの場合""
         if oldValue.characters.count > 0 || sender.numberString != "0"{
             textField.text =  oldValue + String(sender.numberString)
         }
